@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.png"/>
+</head>
+<body class="bg-gray-50">
+    <!-- الشريط العلوي -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">دليل الحرفيين</a>
+            <a href="/signup" class="text-gray-600 hover:text-gray-800">إنشاء حساب</a>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="min-h-screen">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 py-12">
+                <!-- الجانب الأيسر (النموذج) -->
+                <div class="bg-white p-8 rounded-xl shadow-md max-w-md mx-auto lg:mx-0">
+                    <h1 class="text-3xl font-bold mb-8 text-gray-800">مرحبًا بعودتك</h1>
+                    
+                    <form class="space-y-6">
+                        <!-- البريد الإلكتروني -->
+                        <div>
+                            <label class="block text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" 
+                                   class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+                        <!-- كلمة المرور -->
+                        <div>
+                            <label class="block text-gray-700 mb-2">كلمة المرور</label>
+                            <input type="password" 
+                                   class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+                        <!-- زر التسجيل -->
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                            تسجيل الدخول
+                        </button>
+
+                        <!-- نسيت كلمة المرور -->
+                        <div class="text-center">
+                            <a href="/forgot-password" class="text-blue-600 hover:text-blue-800 text-sm">
+                                هل نسيت كلمة المرور؟
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- التسجيل -->
+                    <div class="mt-8 text-center">
+                        <span class="text-gray-600">ليس لديك حساب؟</span>
+                        <a href="/signup" class="text-blue-600 hover:text-blue-800 font-medium">
+                            أنشئ حسابًا الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- الجانب الأيمن (الصورة والنص) -->
+                <div class="hidden lg:block bg-blue-600 rounded-xl relative overflow-hidden">
+                    <img src="https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                         class="w-full h-full object-cover opacity-90">
+                    
+                    <!-- النص على الصورة -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-8 flex flex-col justify-end">
+                        <div class="max-w-md text-white">
+                            <h2 class="text-3xl font-bold mb-4">انضم إلى مجتمع الحرفيين</h2>
+                            <p class="text-lg">سجل الآن للوصول إلى آلاف الفرص وعرض مهاراتك للعالم</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<footer class="flex flex-col space-y-10 justify-center m-10 mb-8">
+
+    <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+        <a class="hover:text-gray-900" href="#">الشروط و القوانين</a> &nbsp;
+        <a class="hover:text-gray-900" href="#">سياسة الخصوصية</a>&nbsp;
+        <a class="hover:text-gray-900" href="#">مراسلة الإدارة</a>&nbsp;
+        
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+        </a>
+        <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+        </a>
+    </div>
+    <p class="text-center text-gray-700 font-medium">&copy; جميع الحقوق محفوظة © 2025 دليل الحرفيين</p>
+</footer>
+  
+</body>
+</html>
